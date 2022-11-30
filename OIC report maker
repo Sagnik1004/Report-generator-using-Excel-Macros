@@ -1,0 +1,226 @@
+Sub OIC_report_maker()
+'
+' OIC_report_maker Macro
+' Creates reports from OIC working
+'
+
+'
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("B2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[13]"
+    Range("B3").Select
+    Columns("B:B").EntireColumn.AutoFit
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[8]"
+    Range("C3").Select
+    Columns("C:C").EntireColumn.AutoFit
+    Range("D2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[12]"
+    Range("E2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[-2]"
+    Range("E3").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Range("F2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[-2]"
+    Range("G2").Select
+    Columns("F:F").EntireColumn.AutoFit
+    Range("G2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[-2]"
+    Range("G1").Select
+    ActiveCell.FormulaR1C1 = "city"
+    Columns("G:G").Select
+    Columns("G:G").EntireColumn.AutoFit
+    Range("H2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[29]"
+    Range("I2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[29]"
+    Range("J2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[17]"
+    Range("K2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[12]"
+    Range("L2").Select
+    Columns("K:K").EntireColumn.AutoFit
+    Range("L2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[8]"
+    Range("M2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[8]"
+    Range("Q2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[-10]"
+    Range("Q3").Select
+    Columns("Q:Q").EntireColumn.AutoFit
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    Sheets("Sheet1").Select
+    Sheets("Sheet1").Name = "Claim details"
+    Range("A1").Select
+    Sheets("Sheet2").Select
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("B2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-1]"
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-1]"
+    Range("D2").Select
+    Columns("C:C").EntireColumn.AutoFit
+    Range("D2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-1]"
+    Range("E2").Select
+    ActiveCell.FormulaR1C1 = "=RC[-1]"
+    Range("F2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("G2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("H2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("I2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("J2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("K2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("L2").Select
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    Range("L2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("M2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("N2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("O2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("P2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("Q2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("R2").Select
+    ActiveWindow.ScrollColumn = 14
+    Range("R2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("S2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("T2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("U2").Select
+    ActiveCell.FormulaR1C1 = "=Pivot!R[3]C[-2]"
+    Range("T2").Select
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 1
+    Range("A1").Select
+    Sheets("Sheet2").Select
+    Sheets("Sheet2").Name = "Claim reported"
+    Range("A1").Select
+    Sheets("Sheet3").Select
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("B2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[1]"
+    Range("B3").Select
+    Columns("B:B").EntireColumn.AutoFit
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[1]"
+    Range("D2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[1]"
+    Range("E2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[10]"
+    Range("E2").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Range("F2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[1]"
+    Range("F2").Select
+    Columns("F:F").EntireColumn.AutoFit
+    Range("G2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[6]"
+    Range("G2").Select
+    Columns("G:G").EntireColumn.AutoFit
+    Range("H2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[3]"
+    Range("H3").Select
+    Columns("H:H").EntireColumn.AutoFit
+    Range("I2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[-1]"
+    Range("I2").Select
+    Columns("I:I").EntireColumn.AutoFit
+    Range("J2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[-1]"
+    Range("K2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[1]"
+    Range("K2").Select
+    Columns("K:K").EntireColumn.AutoFit
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    Range("L2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[11]"
+    Range("L2").Select
+    Columns("L:L").EntireColumn.AutoFit
+    Range("M2").Select
+    ActiveCell.FormulaR1C1 = "=OIC!RC[27]"
+    Range("M3").Select
+    ActiveWindow.ScrollColumn = 1
+    Range("A1").Select
+    Sheets("Sheet3").Select
+    Sheets("Sheet3").Name = "Claimants data"
+    Range("A1").Select
+    Sheets("Sheet4").Select
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("B2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[13]"
+    Range("B3").Select
+    Columns("B:B").EntireColumn.AutoFit
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[8]"
+    Range("C2").Select
+    Columns("C:C").EntireColumn.AutoFit
+    Range("D2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[12]"
+    Range("D2").Select
+    Columns("D:D").EntireColumn.AutoFit
+    Range("E2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[-2]"
+    Range("E3").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Range("F2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[-2]"
+    Range("F3").Select
+    Columns("F:F").EntireColumn.AutoFit
+    Range("G2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[-2]"
+    Range("G2").Select
+    Columns("G:G").EntireColumn.AutoFit
+    Range("H2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[29]"
+    Range("I2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[29]"
+    Range("J2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[17]"
+    Range("K2").Select
+    ActiveCell.FormulaR1C1 = "='OIC repudiated'!RC[12]"
+    Range("K2").Select
+    Columns("K:K").EntireColumn.AutoFit
+    Range("A1").Select
+    Sheets("Sheet4").Select
+    Sheets("Sheet4").Name = "Claims repudiated"
+    Range("A1").Select
+End Sub
