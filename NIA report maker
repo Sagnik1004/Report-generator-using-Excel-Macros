@@ -1,0 +1,144 @@
+Sub NIA_report_maker()
+'
+' NIA_report_maker Macro
+' Creates NIA report from NIA working
+'
+
+'
+    Range("A4").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("B4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[34]"
+    Range("C4").Select
+    ActiveCell.FormulaR1C1 = "Heritage Health Insurance TPA Pvt Ltd."
+    Range("C4").Select
+    Columns("C:C").EntireColumn.AutoFit
+    Range("D4").Select
+    Columns("D:D").EntireColumn.AutoFit
+    Range("D4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[10]"
+    Range("E4").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Range("E4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[10]"
+    Range("F4").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Columns("F:F").EntireColumn.AutoFit
+    Range("F4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[5]"
+    Range("F4").Select
+    Columns("F:F").EntireColumn.AutoFit
+    Range("G4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[9]"
+    Range("H4").Select
+    Columns("H:H").EntireColumn.AutoFit
+    Range("H4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-5]"
+    Range("H4").Select
+    Columns("H:H").EntireColumn.AutoFit
+    Range("I4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-5]"
+    Range("I4").Select
+    Columns("I:I").EntireColumn.AutoFit
+    Range("J4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-5]"
+    Range("K4").Select
+    Columns("K:K").EntireColumn.AutoFit
+    Range("K4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[26]"
+    Range("L4").Select
+    Columns("L:L").EntireColumn.AutoFit
+    Range("L4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[26]"
+    Range("M4").Select
+    Columns("M:M").EntireColumn.AutoFit
+    Range("M4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[14]"
+    Range("N4").Select
+    Columns("N:N").EntireColumn.AutoFit
+    Range("N4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[9]"
+    Range("N4").Select
+    Columns("N:N").EntireColumn.AutoFit
+    Range("O4").Select
+    Columns("O:O").EntireColumn.AutoFit
+    Range("O4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[5]"
+    Range("Q4").Select
+    Columns("P:P").EntireColumn.AutoFit
+    Range("P4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[5]"
+    Range("R4").Select
+    Columns("Q:Q").EntireColumn.AutoFit
+    Columns("R:R").EntireColumn.AutoFit
+    Range("R4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-11]"
+    Range("R4").Select
+    Columns("R:R").EntireColumn.AutoFit
+    Range("S4").Select
+    Columns("S:S").EntireColumn.AutoFit
+    Range("S4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-6]"
+    Range("S4").Select
+    Columns("S:S").EntireColumn.AutoFit
+    Range("X4").Select
+    Columns("T:T").EntireColumn.AutoFit
+    Range("T4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-12]"
+    Range("T4").Select
+    Columns("T:T").EntireColumn.AutoFit
+    Range("U4").Select
+    Columns("U:U").ColumnWidth = 8.57
+    Columns("U:U").EntireColumn.AutoFit
+    Range("U4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-12]"
+    Range("V4").Select
+    Columns("V:V").EntireColumn.AutoFit
+    Range("V4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[-10]"
+    Range("V5").Select
+    Columns("V:V").EntireColumn.AutoFit
+    Range("W4").Select
+    Columns("W:W").EntireColumn.AutoFit
+    Range("W4").Select
+    ActiveCell.FormulaR1C1 = "=NIA!R[-2]C[16]"
+    Range("W5").Select
+    Sheets("Sheet1").Select
+    Range("A3").Select
+    Sheets("Sheet2").Select
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("B2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[12]"
+    Range("C2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[8]"
+    Range("C3").Select
+    Columns("C:C").EntireColumn.AutoFit
+    Range("D2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[12]"
+    Range("D3").Select
+    Columns("D:D").EntireColumn.AutoFit
+    Range("E2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[-2]"
+    Range("E2").Select
+    Columns("E:E").EntireColumn.AutoFit
+    Range("F2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[-2]"
+    Range("F2").Select
+    Columns("F:F").EntireColumn.AutoFit
+    Range("G2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[-2]"
+    Range("G3").Select
+    Columns("G:G").EntireColumn.AutoFit
+    Range("H2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[29]"
+    Range("I2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[29]"
+    Range("J2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[17]"
+    Range("K2").Select
+    ActiveCell.FormulaR1C1 = "=Repudiate!RC[12]"
+    Range("K3").Select
+    Columns("K:K").EntireColumn.AutoFit
+    Range("A1").Select
+End Sub
